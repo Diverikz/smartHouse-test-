@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+  </head>
+  <body id="main-body">
+    <header>
+      <div class="main__container">
+        <div class="header__inner">
+          <svg class="logo">
+            <use xlink:href="img/sprite.svg#logo" />
+          </svg>
+
+          <nav>
+            <a class="nav__link" href="#">О нас</a>
+            <a class="nav__link" href="#">Чем управляем</a>
+            <a class="nav__link" href="#">Как управляем</a>
+            <a class="nav__link" href="#">Наши объекты</a>
+            <a class="nav__link" href="#">Сценарии</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </nav>
+          <div class="phone">
+            <span class="city">Москва</span>
+            <span class="telephone">+7(812)313-24-53</span>
+          </div>
+          <div class="phone">
+            <span class="city">Санкт-Петербург</span>
+            <span class="telephone">+7(812)313-24-53</span>
+          </div>
+          <button class="btn--hollow" id="call">Заказать звонок</button>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1>Умный дом</h1>
+              <svg class="text">
+                <use xlink:href="img/sprite.svg#text-showcase" />
+                <!-- Можно было и черз text stroke, но мне не очень нравится этот вариант -->
+              </svg>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="awards">
+          <svg class="awards-icons">
+            <use xlink:href="img/sprite.svg#records" />
+          </svg>
+          <svg class="awards-icons">
+            <use xlink:href="img/sprite.svg#best-office" />
+          </svg>
+          <svg class="awards-icons">
+            <use xlink:href="img/sprite.svg#crestron" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <div class="main__container">
+      <section id="intro">
+        <div class="block-info">
+          <span class="info">
+            Умный дом увеличит престиж, комфорт, безопасность вашего дома
+          </span>
+          <button class="btn--rounded">Посмотрите наши объекты</button>
+        </div>
+        <div class="block-achievements">
+          <div class="achievements">
+            <span class="number">330</span>
+            <span class="plus">+</span>
+            <span class="specimen">Выполнили объектов</span>
+          </div>
+          <div class="achievements">
+            <span id="number">1</span>
+            <span class="plus">+</span>
+            <span class="specimen">Площади автоматизировали</span>
+          </div>
+          <div class="achievements">
+            <span class="number">120</span>
+            <span class="plus">+</span>
+            <span class="specimen">Клиентов остались довольны</span>
+          </div>
+        </div>
+        <div class="block-year">
+          <svg class="year-logo">
+            <use xlink:href="img/sprite.svg#years" />
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <div class="bc">
+      <div class="main__container">
+        <footer>
+          <div class="cost">
+            <h1>Узнайте стоимость</h1>
+            <svg>
+              <use xlink:href="img/sprite.svg#smart-house" />
+            </svg>
+            <p>Для вашего помещения</p>
+          </div>
+
+          <div class="form">
+            <h2>Мы с вами свяжемся</h2>
+            <p>
+              Ваш проект будет вести персональный менеджер «Умный дом» не мешает
+              реализации любого дизайн-проект
+            </p>
+            <input class="input" type="text" name="name" placeholder="Имя" />
+            <input class="input" type="tel" id="phone" />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+            <div class="send__wrapper">
+              <div class="check__group">
+                <input id="check__input" type="checkbox" value="agreement" />
+                <label for="check__input"
+                  >Соглашаюсь на обработку персональных данных</label
+                >
+              </div>
+              <button class="btn">
+                Отправить
+                <svg class="arrow-icon">
+                  <use xlink:href="img/sprite.svg#arrow" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="my_modal" class="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <h2>Мы с вами свяжемся</h2>
+        <p>После подачи заявки с вами свяжется наш менеджер</p>
+        <input class="input" type="text" name="name" placeholder="Имя" />
+        <input class="input" type="tel" id="modal-phone" />
+        <input class="input" type="email" name="email" placeholder="Почта" />
+
+        <div class="check__group">
+          <input id="check__input" type="checkbox" value="agreement" />
+          <label for="check__input"
+            >Соглашаюсь на обработку персональных данных</label
+          >
+        </div>
+        <button class="btn">
+          Отправить
+          <svg class="arrow-icon">
+            <use xlink:href="img/sprite.svg#arrow" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="intlTelInput.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
