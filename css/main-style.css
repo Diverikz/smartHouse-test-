@@ -202,6 +202,11 @@ section#intro .block-info .btn--rounded::before {
   border-radius: 100px;
 }
 
+section#intro .block-info .btn--rounded .arrow-icon {
+  width: 40px;
+  height: 7px;
+}
+
 section#intro .block-achievements {
   display: -webkit-box;
   display: -ms-flexbox;

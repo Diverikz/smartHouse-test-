@@ -39,7 +39,7 @@ $mobilePopupMargin: 30px !default;
   // absolutely positioned over the input
   position: relative;
   // keep the input's default inline properties
-  display: inline-block;
+  display: block;
 
   // paul irish says this is ok
   // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
